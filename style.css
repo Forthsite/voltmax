@@ -205,7 +205,7 @@ section{
     padding-bottom: 1rem;
     border-bottom: 2px solid #69c07b;
     max-width: max-content;
-    margin-bottom: 4%;
+    margin-bottom: 6.6%;
 }
 .hero-subtext{
     font-size: 2rem;
@@ -422,50 +422,84 @@ label{
     font-size: 1.2rem;
 }
 .advtg-wrapper{
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 .advtg-card{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 350px;
-    background-color: #ecedf042;
+    height: 35vh;
     padding: 1rem;
+    background-image: url(./img/vivint-solar-ZEiFiOsV3K4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: 100%;
     border-radius: 20px;
     cursor: default;
-    border: 1px solid #d7e2f0;
+    border: 0px solid #d7e2f0;
     text-align: center;
     transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+.advtg-card:nth-child(2){
+    background-image: url(./img/vivint-solar-9CalgkSRZb8-unsplash.jpg);
+    background-position: 50% 25%;
+}
+.advtg-card:nth-child(3){
+    background-image: url(./img/mischa-frank-6M9OhcblUHM-unsplash.jpg);
+    background-size: 200%;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.advtg-card:nth-child(4){
+    background-image: url(./img/oliur-Z8I-BhVtzn0-unsplash.jpg);
+    background-size: 130%;
+    background-position: 50% 65%;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.advtg-card:nth-child(5){
+    background-image: url(./img/docusign-P9kDDB8APmE-unsplash\ \(1\).jpg);
+    background-size: 100%;
+    background-position: 50% 15%;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.advtg-card:nth-child(6){
+    background-image: url(./img/aidan-hancock-dA0SA67EgOQ-unsplash.jpg);
+    background-size: 170%;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
 .advtg-header{
-    font-size: 1.23rem;
-    margin-bottom: 1rem;
+    font-size: 2.23rem;
     text-align: center;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: 2rem;
 }
-.advtg-sub{
-    color: #717277;
+
+.advtg-card:hover{
+    background-size: 110%;
 }
-.advtg-img{
+.advtg-card:nth-child(6):hover{
+    background-size: 180%;
+}
+.advtg-card:nth-child(4):hover{
+    background-size: 140%;
+}
+.advtg-card:nth-child(3):hover{
+    background-size: 210%;
     transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.advtg-img img{
-    width: 80%;
-}
-.advtg-img:nth-last-child(3) img{
-    width: 60%;
-    margin-bottom: 10%;
-}
-.advtg-card:hover .advtg-img{
-    transform: translateY(-10%);
-    filter: drop-shadow(5px 6px 9px #a3a3a3);
-}
-.advtg-card:hover{
-    background-color: #d6d7da42;
-    border: 1px solid var(--main-color);
+.advtg-card:hover .advtg-header{
+    color: #292524;
 }
 .advtg-content{
+    color: whitesmoke;
+    font-weight: 700;
     min-height: 6rem;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .questionaire{
     display: none;
@@ -601,7 +635,7 @@ a{
 #about{
     display: flex;
     flex-direction: column;
-    padding-bottom: 200rem;
+    padding-bottom: 4%;
 }
 @media (max-width: 1440px) {
     /* Adjust font sizes for a screen width up to 1440px */
